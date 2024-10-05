@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup & Login</title>
+    <link rel="stylesheet" href="login-signup.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="form-toggle">
+                <button class="toggle-button" id="loginBtn"><a href="../index.html">Login</a></button>
+                <button class="toggle-button" id="signupBtn">Signup</button>
+            </div>
+
+            <form id="loginForm" class="form" action="#" method="POST">
+                <h2>Login</h2>
+                <div class="input-group">
+                    <label for="loginEmail">Email:</label>
+                    <input type="email" id="loginEmail" required />
+                </div>
+                <div class="input-group">
+                    <label for="loginPassword">Password:</label>
+                    <input type="password" id="loginPassword" required />
+                </div>
+                <button type="submit" class="submit-button">Login</button>
+            </form>
+
+            <form id="signupForm" class="form hidden" action="#" method="POST">
+                <h2>Signup</h2>
+                <div class="input-group">
+                    <label for="signupName">Name:</label>
+                    <input type="text" id="signupName" required />
+                </div>
+                <div class="input-group">
+                    <label for="signupEmail">Email:</label>
+                    <input type="email" id="signupEmail" required />
+                </div>
+                <div class="input-group">
+                    <label for="signupPassword">Password:</label>
+                    <input type="password" id="signupPassword" required />
+                </div>
+                <div class="input-group">
+                    <label for="userRole">Role:</label>
+                    <select id="userRole" required>
+                        <option value="" disabled selected>Select your role</option>
+                        <option value="user">User</option>
+                        <option value="admin">Admin</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-button">Signup</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="login-signup.js"></script>
+</body>
+</html>
