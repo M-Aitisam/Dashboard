@@ -1,0 +1,148 @@
+*{
+    text-decoration: none;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Product Details */
+.product-details {
+    display: flex;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 20px 0;
+   
+
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.product-image {
+    padding: 4rem 0;
+    height: 10rem;
+    flex: 1;
+}
+
+.product-image img {
+    width: 100%;
+    height: 27rem;
+    border-radius: 8px 0 0 8px;
+}
+
+.product-info {
+    flex: 2;
+    padding: 20px;
+}
+
+.product-info h1 {
+    margin: 0 0 10px;
+    color: #e67e22;
+}
+
+.product-info .price {
+    font-size: 24px;
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.product-info .description {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.product-info h3 {
+    margin: 15px 0 5px;
+}
+
+.product-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.product-info li {
+    background-color: #f9f9f9;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.button-group {
+    margin-top: 20px;
+}
+
+.add-to-cart, .back-to-shop {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart {
+    background-color: #3498db;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.add-to-cart:hover {
+    background-color: #2980b9;
+}
+
+.back-to-shop {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.back-to-shop:hover {
+    background-color: #c0392b;
+}
+
+/* Sales Info */
+.sales-info {
+    margin-top: 30px;
+}
+
+.sales-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.sales-table th, .sales-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.sales-table th {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.sales-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.sales-table tr:hover {
+    background-color: #ddd;
+}
+
+.sales-table .active {
+    background-color: #e0e7ff;
+}

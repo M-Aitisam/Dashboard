@@ -18,5 +18,5 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
 document.getElementById("signupForm").addEventListener("submit", function (e) {
     e.preventDefault();
     // Handle signup logic here, then redirect
-    window.location.href = "index.html"; // Replace with your dashboard URL
+    window.location.href = "../Folders/index.html"; // Replace with your dashboard URL
 });
