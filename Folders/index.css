@@ -12,72 +12,69 @@
 body{
   background: rgb(226, 226, 226);
 }
-nav{
-  position: sticky;
-  top: 0;
-  bottom: 0;
-  height: 100vh;
-  left: 0;
-  width: 90px;
-  /* width: 280px; */
-  background: #fff;
-  overflow: hidden;
-  transition: 1s;
-}
-nav:hover{
-  width: 280px;
-  transition: 1s;
-}
-.logo{
-  text-align: center;
-  display: flex;
-  margin: 10px 0 0 10px;
-  padding-bottom: 3rem;
-}
+.sidebar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width:80px;
+    height: 100vh;
+    color: white;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background: rgba(113, 99, 186, 255);
+ 
+  }
+  .sidebar:hover{
+      width: 240px;
+      transition: 0.5s;
+  }
+  .logo {
+    height: 80px;
+    padding: 16px;
+  }
+  .logo img {
+    height: 100px;
+    left: -5;
+  }
+  .menu {
+    height: 95%;
+    position: relative;
+    list-style: none;
+  }
+  .menu li {
+    padding: 1rem 1rem 1rem 1.5rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+  }
+  .menu li:hover {
+    background-color: #e0e0e058;
+  }
+  .menu li a {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 2.1rem;
+  }
+  .menu a span {
+    overflow: hidden;
+  }
+  .menu a i {
+    font-size: 1.5rem;
+  }
 
-.logo img{
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-}
-.logo span{
-  font-weight: bold;
-  padding-left: 15px;
-  font-size: 18px;
-  text-transform: uppercase;
-}
-a{
-  position: relative;
-  width: 280px;
-  font-size: 14px;
-  color: rgb(85, 83, 83);
-  display: table;
-  padding: 10px;
-}
-nav .fas{
-  position: relative;
-  width: 70px;
-  height: 40px;
-  top: 20px;
-  font-size: 20px;
-  text-align: center;
-}
-.nav-item{
-  position: relative;
-  top: 12px;
-  margin-left: 10px;
-}
-a:hover{
-  background: #eee;
-}
-a:hover i{
-  color: #34AF6D;
-  transition: 0.5s;
-}
-.logout{
-  position: absolute;
-  bottom: 0;
-}
+ 
+.menu  .logout{
+    margin-top: 1rem;
+    bottom :5rem;
+    width: 100%;
+    position: absolute;
+  
+     width: 100%;
+  }
+
+
 
 .container{
   display: flex;
@@ -87,7 +84,7 @@ a:hover i{
 .main{
   position: relative;
   padding: 20px;
-  width: 100%;
+  width: 90%;
 }
 .main-top{
   display: flex;
@@ -209,3 +206,4 @@ table thead tr{
   color: #fff;
   transition: 0.5rem;
 }
+
