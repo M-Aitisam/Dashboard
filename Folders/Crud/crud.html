@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Product Manager</title>
+    <link rel="stylesheet" href="crud.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Product Manager</h1>
+        <form id="productForm">
+            <div class="form-group">
+                <input type="text" id="productId" placeholder="ID" required>
+            </div>
+            <div class="form-group">
+                <input type="text" id="productName" placeholder="Product Name" required>
+            </div>
+            <div class="form-group">
+                <input type="text" id="customerName" placeholder="Customer Name" required>
+            </div>
+            <div class="form-group">
+                <input type="date" id="purchaseDate" required>
+            </div>
+            <div class="form-group">
+                <input type="number" id="productQuantity" placeholder="Quantity" required>
+            </div>
+            <div class="form-group">
+                <input type="number" step="0.01" id="totalPrice" placeholder="Total Price" required>
+            </div>
+            <div class="form-group">
+                <textarea id="productDescription" placeholder="Product Details" required></textarea>
+            </div>
+            <div class="form-group">
+                <input type="file" id="productImage" accept="image/*" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Add Product</button>
+            </div>
+        </form>
+
+        <table id="productList">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Product</th>
+                    <th>Customer</th>
+                    <th>Date</th>
+                    <th>Quantity</th>
+                    <th>Total Price</th>
+                    <th>Details</th>
+                    <th>Image</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dynamic product rows will be inserted here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="crud.js"></script>
+</body>
+</html>
