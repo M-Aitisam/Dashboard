@@ -87,7 +87,7 @@ body {
 /* Main Section */
 .main {
     position: relative;
-    padding: 20px;
+    padding: 10px 20px 0 20px;
     width: 90%;
 }
 
@@ -159,7 +159,8 @@ body {
 
 .attendance-list {
     width: 100%;
-    padding: 10px;
+    height: auto;
+    padding: 10px 10px 0 10px;
     margin-top: 10px;
     background: #fff;
     border-radius: 10px;
